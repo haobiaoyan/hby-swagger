@@ -14,7 +14,6 @@
     <packaging>jar</packaging>
 
     <name>hby-swagger-core</name>
-    <description>Demo project for Spring Boot</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,24 +22,29 @@
     </properties>
 
     <dependencies>
-
+        <!--springMVC核心包 start-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring-webmvc}</version>
         </dependency>
+        <!--springMVC核心包 end-->
 
+        <!--swagger核心包 start-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>${springfox-swagger2}</version>
         </dependency>
+        <!--swagger核心包 end-->
 
+        <!--servlet核心包 start-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet-api}</version>
         </dependency>
+        <!--servlet核心包 end-->
     </dependencies>
 
     <build>

@@ -14,7 +14,6 @@
     <packaging>jar</packaging>
 
     <name>spring-boot-swagger</name>
-    <description>Demo project for Spring Boot</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,20 +22,26 @@
     </properties>
 
     <dependencies>
+        <!--Jetty核心包 start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jetty</artifactId>
         </dependency>
+        <!--Jetty核心包 end-->
 
+        <!--springTest 核心包 start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--springTest 核心包 end-->
 
+        <!--SpringWEB核心包 start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!--排除内置Tomcat-->
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
@@ -44,12 +49,15 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--SpringWEB核心包 end-->
 
+        <!--swaggerUI 核心包 start-->
         <dependency>
             <groupId>com.hby</groupId>
             <artifactId>swagger-ui-layer</artifactId>
             <version>${swagger-ui-layer}</version>
         </dependency>
+        <!--swaggerUI 核心包 end-->
 
         <!-- lombok核心包 start -->
         <dependency>

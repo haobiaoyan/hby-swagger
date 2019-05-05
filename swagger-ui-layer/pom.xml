@@ -14,7 +14,6 @@
     <packaging>jar</packaging>
 
     <name>swagger-ui-layer</name>
-    <description>Demo project for Spring Boot</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,22 +22,26 @@
     </properties>
 
     <dependencies>
+        <!--swagger核心包 start-->
         <dependency>
             <groupId>com.hby</groupId>
             <artifactId>hby-swagger-core</artifactId>
             <version>${hby-swagger-core}</version>
             <scope>compile</scope>
         </dependency>
+        <!--swagger核心包 end-->
 
     </dependencies>
 
     <build>
+        <!--打包资源文件 start-->
         <resources>
             <resource>
                 <directory>${project.basedir}/src/main/resources</directory>
                 <targetPath>META-INF/resources/</targetPath>
             </resource>
         </resources>
+        <!--打包资源文件 end-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
